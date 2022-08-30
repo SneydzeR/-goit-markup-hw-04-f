@@ -6,6 +6,7 @@
     --secondary-black-color: #2F303A;
     --super-blue-color :#188CE8;
     --fon-button-color : #F5F4FA;
+    --fon-icon-color : rgba(245, 244, 250, 1);
 
     --main-font: 'Roboto',sans-serif;
     --secondary-font : 'Raleway',sans-serif;
@@ -14,13 +15,13 @@
 /*body*/
 
 body {
+    max-width: 1600px;
     font-size: 14px;
     background-color:var(--primary-white-color);
     color: var(--primary-text);
     font-family: 'Roboto',sans-serif;
     letter-spacing: 0.03em;
 }
-
 /*Утиліт*/
 
 .list {
@@ -126,6 +127,7 @@ body {
 .contact-nav .link:focus {
     color: var(--accent-color);
 }
+
 .site-nav .list {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -148,7 +150,11 @@ body {
 /*Hero*/
 
 .hero {
-    background: var(--secondary-black-color);
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img-fone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     margin-top: 0;
     margin: 0px;
@@ -157,6 +163,7 @@ body {
 }
 h1,h2,h3 { margin: 0px;
 }
+
 .hero-title {
     margin-bottom: 30px;
 
@@ -197,6 +204,31 @@ h1,h2,h3 { margin: 0px;
 }
 .features-list .title {
     margin-bottom: 10px;
+}
+.features-list .item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--fon-icon-color);
+}
+.icon-delivery::before {
+    background-image: url(../images/vectortar.svg);
+    margin-bottom: 30px;
+}
+.icon-top::before {
+    background-image: url();
+    margin-bottom: 30px;
+}
+.icon-sop::before {
+    background-image: url();
+    margin-bottom: 30px;
+}
+.icon-pop::before {
+    background-image: url();
+    margin-bottom: 30px;
 }
 .features-list .item {
     width: 270px;
@@ -311,6 +343,14 @@ h1,h2,h3 { margin: 0px;
 .portal .text {
     margin: 0px;
 }
+
+/*Newfolder*/
+.newfolder {
+    background-color: var(--fon-button-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 /*Button*/
 
@@ -492,6 +532,7 @@ h1,h2,h3 { margin: 0px;
 }
 
 /*Special*/
+
 .special {
     margin-top: 0;
     padding-top: 94px;
