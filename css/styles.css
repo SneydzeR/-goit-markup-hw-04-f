@@ -295,7 +295,6 @@ h1,h2,h3 { margin: 0px;
     padding: 0px;
     list-style: none;
 }
-
 .working-list {
     color: var(--title-text-color);
     font-weight: 700;
@@ -346,9 +345,39 @@ h1,h2,h3 { margin: 0px;
 
 /*Newfolder*/
 .newfolder {
-    background-color: var(--fon-button-color);
+    background-color: var(--primary-white-color);
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.folder-list {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.customers-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.fixt {
+    background: var(--primary-white-color) ;
+    border-radius: 0px 0px 4px 4px;
+
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid rgba(175, 177, 184, 1);
+}
+.fixt {
+    margin-right: 0px;
+}
+.fixt:not(:last-child) {
+    margin-right: 30px;
 }
 
 
