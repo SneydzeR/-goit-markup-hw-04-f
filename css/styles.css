@@ -22,23 +22,25 @@ body {
     font-family: 'Roboto',sans-serif;
     letter-spacing: 0.03em;
 }
+
 /*Утиліт*/
+.contacts-page {
+    display: flex ;
+    align-items: center;
+}
 .button-icon {
     margin-right: 10px;
     align-items: center;
-    fill: red;
+    fill: currentColor;
 }
-.button-icon:hover {
-    fill: black;
+.button-icon:hover,
+.smartphone {
+    fill: var(--accent-color);
 }
 .smartphone {
-    width: 16px;
-    height: 16px;
+    align-items: center;
     margin-right: 10px;
-    fill: red;
-}
-.contacts-page .icon {
-    fill: currentColor red;
+    fill: currentColor;
 }
 .list {
     list-style: none;
@@ -135,9 +137,10 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    display: block;
+    display: flex;
     padding-top:  32px;
     padding-bottom: 32px;
+    align-items: center;
 }
 .contact-nav .link:hover, 
 .contact-nav .link:focus {
