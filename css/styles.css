@@ -7,6 +7,7 @@
     --super-blue-color :#188CE8;
     --fon-button-color : #F5F4FA;
     --fon-icon-color : rgba(245, 244, 250, 1);
+    --icon-fons-color : rgba(175, 177, 184, 1);
 
     --main-font: 'Roboto',sans-serif;
     --secondary-font : 'Raleway',sans-serif;
@@ -42,6 +43,37 @@ body {
     margin-right: 10px;
     fill: currentColor;
 }
+.customers-list .fixt {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+.customers-list .omga{
+    fill: var(--icon-fons-color);
+}
+.company-icon :hover {
+    fill:var(--accent-color);
+}
+.omga { 
+    text-decoration: none;
+}
+
+.features-list .superio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-position: center;
+    height: 120px;
+}
+
+
+
 .list {
     list-style: none;
     padding: 0;
@@ -196,7 +228,7 @@ h1,h2,h3 { margin: 0px;
 
 /*features*/
 .superio {
-    margin-bottom: 30px;
+ 
 }
 .mario {
     padding-top: 30px;
@@ -250,6 +282,7 @@ h1,h2,h3 { margin: 0px;
 
 .rutin {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 .work-list {
     color: var(--title-text-color);
@@ -346,9 +379,29 @@ h1,h2,h3 { margin: 0px;
 }
 .portal {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .portal .text {
     margin: 0px;
+}
+.social-icon {
+    fill: var(--icon-fons-color);
+}
+.media {
+    display: flex;
+    list-style: none;
+    border-radius: 50px;
+    margin-top: 16px;
+}
+
+.media .social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 /*Newfolder*/
