@@ -8,6 +8,8 @@
     --fon-button-color : #F5F4FA;
     --fon-icon-color : rgba(245, 244, 250, 1);
     --icon-fons-color : rgba(175, 177, 184, 1);
+    --link-icon-color : rgba(255, 255, 255, 0.1);
+    --client-icon-color : rgba(33, 150, 243, 1);
 
     --main-font: 'Roboto',sans-serif;
     --secondary-font : 'Raleway',sans-serif;
@@ -56,11 +58,29 @@ body {
 .customers-list .omga{
     fill: var(--icon-fons-color);
 }
-.company-icon :hover {
-    fill:var(--accent-color);
+.omga:hover,
+.omga:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
+.sociamod-link:hover,
+.sociamod-link:focus {
+    background-color: var(--accent-color);
+    fill:var(--primary-white-color);
+}
+
+
 .omga { 
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--icon-fons-color);
+    border-radius: 4px;
+    fill: var(--accent-color);
 }
 
 .features-list .superio {
@@ -72,6 +92,11 @@ body {
     height: 120px;
 }
 
+.person-card {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: var(--primary-white-color);
+}
 
 
 .list {
@@ -378,8 +403,7 @@ h1,h2,h3 { margin: 0px;
     margin-bottom: 10px;
 }
 .portal {
-    padding-top: 30px;
-    padding-bottom: 30px;
+   padding: 30px;
 }
 .portal .text {
     margin: 0px;
@@ -392,6 +416,7 @@ h1,h2,h3 { margin: 0px;
     list-style: none;
     border-radius: 50px;
     margin-top: 16px;
+    margin-bottom: 30px;
 }
 
 .media .social {
@@ -432,7 +457,6 @@ h1,h2,h3 { margin: 0px;
     width: 170px;
     height: 92px;
     text-align: center;
-    border: 1px solid rgba(175, 177, 184, 1);
 }
 .fixt {
     margin-right: 0px;
@@ -666,4 +690,60 @@ h1,h2,h3 { margin: 0px;
   }
   .contact-foot .item:not(:last-child) {
     margin-bottom: 9px;
+  }
+
+
+  .super-footer {
+    margin-left: 70px;
+  }
+  .social-foot {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--primary-white-color);
+    margin: 0px;
+    padding: 0px;
+  }
+  .social-media-foot {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 50px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .social-media-foot .block {
+    width: 44px;
+    height: 44px;
+    fill: var(--fon-button-color);
+    
+    display: flex;
+
+    cursor: pointer;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .footernew {
+    display: flex;
+    align-items: baseline;
+  } 
+  .footer-hub {
+    display: block;
+  }
+  .sociamod-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--fon-button-color);
+    background-color: var(--link-icon-color);
+    border-radius: 50%;
   }
