@@ -10,6 +10,8 @@
     --icon-fons-color : rgba(175, 177, 184, 1);
     --link-icon-color : rgba(255, 255, 255, 0.1);
     --client-icon-color : rgba(33, 150, 243, 1);
+    --text-people-color:rgba(117, 117, 117, 1);
+
 
     --main-font: 'Roboto',sans-serif;
     --secondary-font : 'Raleway',sans-serif;
@@ -68,7 +70,11 @@ body {
     background-color: var(--accent-color);
     fill:var(--primary-white-color);
 }
-
+.sociamod-links:hover,
+.sociamod-links:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
 
 .omga { 
     text-decoration: none;
@@ -93,8 +99,6 @@ body {
 }
 
 .person-card {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    flex-basis: calc((100% - 90px) / 4);
     background-color: var(--primary-white-color);
 }
 
@@ -376,7 +380,6 @@ h1,h2,h3 { margin: 0px;
     border-radius: 0px 0px 4px 4px;
 
     width: 270px;
-    height: 368px;
     text-align: center;
 }
 .work-platform {
@@ -390,6 +393,7 @@ h1,h2,h3 { margin: 0px;
 }
 .work-platform .text {
     margin-top: 0px;
+    color: var(--text-people-color)
 }
 .work-list .text{
     color: var(--primary-text-color);
@@ -416,10 +420,11 @@ h1,h2,h3 { margin: 0px;
     list-style: none;
     border-radius: 50px;
     margin-top: 16px;
-    margin-bottom: 30px;
+    padding: 0px;
+    justify-content: center;
 }
 
-.media .social {
+.media .sociamod-links{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -428,6 +433,20 @@ h1,h2,h3 { margin: 0px;
     align-items: center;
     cursor: pointer;
 }
+
+.sociamod-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-icon-color);
+    border-radius: 50%;
+    fill: var(--icon-fons-color);
+  }
+  .social-icon {
+    fill: currentColor var(--primary-white-color);
+  }
 
 /*Newfolder*/
 .newfolder {
@@ -464,7 +483,12 @@ h1,h2,h3 { margin: 0px;
 .fixt:not(:last-child) {
     margin-right: 30px;
 }
-
+.customers-list .fixt {
+    margin-right: 0px;
+}
+.customers-list .fixt:not(:last-child) {
+margin-right: 30px;
+}
 
 /*Button*/
 
@@ -746,4 +770,10 @@ h1,h2,h3 { margin: 0px;
     fill: var(--fon-button-color);
     background-color: var(--link-icon-color);
     border-radius: 50%;
+  }
+  .social-media-foot .block {
+    margin: 0px;
+  }
+  .social-media-foot .block:not(:last-child) {
+    margin-right: 10px;
   }
